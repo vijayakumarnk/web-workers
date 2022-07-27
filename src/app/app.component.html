@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+
+<div>
+  <input type = "text" id="prime" #prime> <br/>
+   <a href="#" (click)="getPrimeNumberByNormal(prime.value)">Click</a>
+   <div>prime number by normal thread is {{ primeNumNormal }}</div> <br/>
+   <a href="#" (click)="getPrimeNumberByWorker(prime.value)">Click</a>
+   <div>prime number by web worker thread is {{ primeNumWorker }}</div>
+</div>
